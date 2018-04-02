@@ -1,0 +1,73 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, p {
+  font: 400 14px/1 "PingFang";
+  color: white;
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+input {
+  outline: 0;
+  border: 0; }
+
+.container {
+  display: flex;
+  height: 100%; }
+  .container aside {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 100%;
+    background: url("../images/aside_bg.jpg") no-repeat; }
+    .container aside header {
+      height: 88px;
+      padding-top: 18px;
+      box-sizing: border-box;
+      background: #34d1ea;
+      box-shadow: 0 7px 10px 0 rgba(176, 176, 176, 0.35); }
+      .container aside header .title, .container aside header .desc {
+        text-align: center; }
+      .container aside header .title {
+        font-size: 22px; }
+      .container aside header .desc {
+        font-size: 16px;
+        margin-top: 14px; }
+    .container aside .info {
+      display: flex;
+      flex-direction: column;
+      padding: 14px 0;
+      color: white; }
+      .container aside .info .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .container aside .info .user .avatar {
+          width: 70px;
+          height: 70px;
+          background: white;
+          border-radius: 50%;
+          overflow: hidden; }
+        .container aside .info .user .name {
+          font-size: 16px;
+          margin: 10px 0; }
+      .container aside .info .search {
+        padding: 0 18px;
+        position: relative; }
+        .container aside .info .search input[type=text] {
+          width: 184px;
+          height: 32px;
+          background: rgba(255, 255, 255, 0.7);
+          border-radius: 16px; }
+        .container aside .info .search .icon {
+          position: absolute;
+          right: 28px;
+          top: 6px; }
+
+/*# sourceMappingURL=style.css.map */

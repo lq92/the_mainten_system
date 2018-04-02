@@ -1,0 +1,53 @@
+@import 'reset'
+
+.container
+	display: flex
+	height: 100%
+	aside
+		flex: 0 0 auto
+		width: 220px
+		height: 100%
+		background: url('../images/aside_bg.jpg') no-repeat
+		header
+			height: 88px
+			padding-top: 18px
+			box-sizing: border-box
+			background: rgb(52, 209, 234)
+			box-shadow: 0 7px 10px 0 rgba(176, 176, 176, 0.35)
+			.title, .desc
+				text-align: center
+			.title
+				font-size: 22px
+			.desc
+				font-size: 16px	
+				margin-top: 14px
+		.info
+			display: flex
+			flex-direction: column
+			padding: 14px 0
+			color: rgb(255, 255, 255)
+			.user
+				display: flex
+				flex-direction: column
+				align-items: center
+				.avatar
+					width: 70px
+					height: 70px
+					background: rgb(255, 255, 255)
+					border-radius: 50%
+					overflow: hidden
+				.name
+					font-size: 16px
+					margin: 10px 0
+			.search
+				padding: 0 18px
+				position: relative
+				input[type=text]
+					width: 184px
+					height: 32px
+					background: rgba(255, 255, 255, 0.7)
+					border-radius: 16px	
+				.icon
+					position: absolute
+					right: 28px
+					top: 6px		
