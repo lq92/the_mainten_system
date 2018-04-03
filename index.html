@@ -25,9 +25,108 @@
 				<img class='icon' width='21' height='21' src='images/search_icon.png' />
 			</form>
 		</div>
+		<nav>
+			<ul class='list_wrapper'>
+				<li class='list active'>
+					<p class='text one'>二次供水泵房区域图</p>
+				</li>
+				<li class='list'>
+					<p class='text two'>环控系统</p>
+				</li>
+				<li class='list'>
+					<p class='text three'>设备告警</p>
+				</li>
+				<li class='list'>
+					<p class='text four'>设备巡检</p>
+				</li>
+				<li class='list'>
+					<p class='text five'>日志报表</p>
+				</li>
+				<li class='list'>
+					<p class='text six'>数据统计及分析</p>
+				</li>
+				<li class='list'>
+					<p class='text seven'>配置管理</p>
+				</li>
+			</ul>
+		</nav>
 	</aside>
 	<main>
-		
+		<header>
+			<div class='menu'>
+				<span class='item'></span>
+				<span class='item'></span>
+				<span class='item'></span>
+			</div>
+			<div class='user_info'>
+				<div class='avatar_wrapper'>
+					<img width='54' height='54' src='images/avatar.png'>
+				</div>
+				<span class='name'>管理员</span>
+			</div>
+		</header>
+		<div class='information'>
+			<div class='toggle_btns'>
+				<span id='map' class='active'>地图页</span>
+				<span id='three_d'>3D页</span>
+			</div>
+			<div class='info_wrapper'>
+				<p class='text fault'>故障</p>
+				<p class='text normal'>正常</p>
+				<p class='text mainten'>维保</p>
+			</div>
+		</div>
+		<div class='map'></div>
+		<div class='three_d'>
+			<section class='section_left'>
+				<div class='system'>
+					<h3 class='title'>系统状态</h3>
+					<p class='text'>总运行时间：<span class='total_time'>603天</span></p>
+					<p class='text'>连续安全运行时间：<span class='safety_time'>33天</span></p>
+					<p class='text'>本月吨水能耗：<span class='consumption'>0.44kw.h/n3 0.55kw.h/n3.mpa</span></p>
+					<p class='text'>官网阀门状态：<span class='valve_status'>--</span></p>
+					<p class='text'>进水压力：<span class='water_presure'>0.72mpa</span></p>
+					<p class='text'>本月报警率：<span class='alarm_percentage'>1.07%</span></p>
+					<p class='text'>设备状态：<span class='machine_status'>--</span></p>
+					<p class='text'>水箱液位：<span class='water_tank'>--</span></p>
+					<p class='text'>末梢压力：<span class='peripheral_presure'>0.72mpa</span></p>
+				</div>
+				<div class='flow_status'>
+					<h3 class='title'>流量状态</h3>
+					<p class='text'>总流量：<span class='total_flow'>60751.14n3</span></p>
+					<p class='text'>瞬时流量：<span class='instant_flow'>5.814n3</span></p>
+				</div>
+				<div class='water_quantity'>
+					<h3 class='title'>水质状态</h3>
+					<p class='text'>浊度：<span class='muddy'>0.61NTU</span></p>
+					<p class='text'>余氧：<span class='remain_oxygen'>0.77ng/L</span></p>
+					<p class='text'>PH值：<span class='ph'>7.3</span></p>
+				</div>
+			</section>
+			<section class='section_right'>
+				<div class='pump_status'>
+					<h3 class='title'>泵房状态</h3>
+					<p class='text'>温度：<span class='temp'>22摄氏度</span></p>
+					<p class='text'>湿度：<span class='humidity'>75%Hr</span></p>
+					<p class='text'>入孔：<span class='hole'>--</span></p>
+					<p class='text'>泵房积水：<span class='ponding'>正常</span></p>
+					<p class='text'>泵房门禁：<span class='entrance_guard'>--</span></p>
+					<p class='text'>火警状态：<span class='fire_status'>--</span></p>
+				</div>
+				<div class='consumption_status'>
+					<h3 class='title'>耗能状态</h3>
+					<p class='text'>总电量：<span class='total_electricity'>33839.14Kv.h</span></p>
+					<p class='text'>瞬时有功功率：<span class='power'>3.54kv</span></p>
+					<p class='text'>总功率因数：<span class='total_power'>0.99</span></p>
+					<p class='text'>A相电流：<span class='A_current'>5.76A</span></p>
+					<p class='text'>B相电流：<span class='B_current'>6.38A</span></p>
+					<p class='text'>C相电流：<span class='C_current'>6.07A</span></p>
+					<p class='text'>A相电压：<span class='A_voltage'>247V</span></p>
+					<p class='text'>B相电压：<span class='B_voltage'>221V</span></p>
+					<p class='text'>C相电压：<span class='C_voltage'>249V</span></p>
+				</div>
+			</section>
+		</div>
 	</main>
 </div>
 </body>
