@@ -210,64 +210,81 @@ ul {
           .container main .information .toggle_btns #map.active, .container main .information .toggle_btns #three_d.active {
             background: #45a1ff;
             color: white; }
-      .container main .information .info_wrapper {
+      .container main .information .map_info_hook {
         display: flex; }
-      .container main .information .fault {
-        color: #f54040;
-        font-size: 20px;
-        margin-right: 84px;
-        vertical-align: top; }
-        .container main .information .fault:last-child {
-          margin: 0; }
-        .container main .information .fault.fault:before {
-          display: inline-block;
-          content: "";
-          width: 24px;
-          height: 24px;
-          background: #f54040;
-          border-radius: 50%;
-          box-shadow: 0 0 10px 0 #f54040;
-          margin-right: 18px;
+        .container main .information .map_info_hook .fault {
+          color: #f54040;
+          font-size: 20px;
+          margin-right: 84px;
           vertical-align: top; }
-      .container main .information .normal {
-        color: #47d147;
-        font-size: 20px;
-        margin-right: 84px;
-        vertical-align: top; }
-        .container main .information .normal:last-child {
-          margin: 0; }
-        .container main .information .normal.normal:before {
-          display: inline-block;
-          content: "";
-          width: 24px;
-          height: 24px;
-          background: #47d147;
-          border-radius: 50%;
-          box-shadow: 0 0 10px 0 #47d147;
-          margin-right: 18px;
+          .container main .information .map_info_hook .fault:last-child {
+            margin: 0; }
+          .container main .information .map_info_hook .fault.fault:before {
+            display: inline-block;
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: #f54040;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 0 #f54040;
+            margin-right: 18px;
+            vertical-align: top; }
+        .container main .information .map_info_hook .normal {
+          color: #47d147;
+          font-size: 20px;
+          margin-right: 84px;
           vertical-align: top; }
-      .container main .information .mainten {
-        color: #fff154;
-        font-size: 20px;
-        margin-right: 84px;
-        vertical-align: top; }
-        .container main .information .mainten:last-child {
-          margin: 0; }
-        .container main .information .mainten.mainten:before {
-          display: inline-block;
-          content: "";
-          width: 24px;
-          height: 24px;
-          background: #fff154;
-          border-radius: 50%;
-          box-shadow: 0 0 10px 0 #fff154;
-          margin-right: 18px;
+          .container main .information .map_info_hook .normal:last-child {
+            margin: 0; }
+          .container main .information .map_info_hook .normal.normal:before {
+            display: inline-block;
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: #47d147;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 0 #47d147;
+            margin-right: 18px;
+            vertical-align: top; }
+        .container main .information .map_info_hook .mainten {
+          color: #fff154;
+          font-size: 20px;
+          margin-right: 84px;
           vertical-align: top; }
-    .container main .map {
+          .container main .information .map_info_hook .mainten:last-child {
+            margin: 0; }
+          .container main .information .map_info_hook .mainten.mainten:before {
+            display: inline-block;
+            content: "";
+            width: 24px;
+            height: 24px;
+            background: #fff154;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 0 #fff154;
+            margin-right: 18px;
+            vertical-align: top; }
+      .container main .information .threed_info_hook {
+        display: none; }
+        .container main .information .threed_info_hook .text {
+          display: inline-block;
+          width: 136px;
+          height: 42px;
+          color: white;
+          background: #45a1ff;
+          font-size: 20px;
+          text-align: center;
+          line-height: 42px;
+          margin-left: 25px;
+          border-radius: 6px;
+          cursor: pointer; }
+          .container main .information .threed_info_hook .text:hover {
+            background: #7dbdff; }
+    .container main .map_box_hook {
       height: calc(100% - 88px - 85px);
       background: url("../images/map_bg.png") no-repeat;
-      background-size: cover; }
-    .container main .three_d {
+      background-size: cover;
+      position: relative; }
+    .container main .threed_box_hook {
       display: flex;
       justify-content: space-between;
       height: calc(100% - 88px - 85px);
@@ -275,11 +292,11 @@ ul {
       background-size: cover;
       padding-right: 50px;
       display: none; }
-      .container main .three_d .section_left {
+      .container main .threed_box_hook .section_left {
         display: flex;
         flex-direction: column;
         justify-content: space-around; }
-      .container main .three_d .system {
+      .container main .threed_box_hook .system {
         width: 300px;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 8px;
@@ -287,14 +304,14 @@ ul {
         padding: 0 0 8px 25px;
         box-sizing: border-box;
         margin-left: 20px; }
-        .container main .three_d .system .title {
+        .container main .threed_box_hook .system .title {
           font-size: 18px;
           text-align: center;
           margin: 12px 0 20px; }
-        .container main .three_d .system .text {
+        .container main .threed_box_hook .system .text {
           font-size: 12px;
           margin-bottom: 10px; }
-      .container main .three_d .flow_status {
+      .container main .threed_box_hook .flow_status {
         width: 300px;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 8px;
@@ -302,14 +319,14 @@ ul {
         padding: 0 0 8px 25px;
         box-sizing: border-box;
         margin-left: 20px; }
-        .container main .three_d .flow_status .title {
+        .container main .threed_box_hook .flow_status .title {
           font-size: 18px;
           text-align: center;
           margin: 12px 0 20px; }
-        .container main .three_d .flow_status .text {
+        .container main .threed_box_hook .flow_status .text {
           font-size: 12px;
           margin-bottom: 10px; }
-      .container main .three_d .water_quantity {
+      .container main .threed_box_hook .water_quantity {
         width: 300px;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 8px;
@@ -317,18 +334,18 @@ ul {
         padding: 0 0 8px 25px;
         box-sizing: border-box;
         margin-left: 20px; }
-        .container main .three_d .water_quantity .title {
+        .container main .threed_box_hook .water_quantity .title {
           font-size: 18px;
           text-align: center;
           margin: 12px 0 20px; }
-        .container main .three_d .water_quantity .text {
+        .container main .threed_box_hook .water_quantity .text {
           font-size: 12px;
           margin-bottom: 10px; }
-      .container main .three_d .section_right {
+      .container main .threed_box_hook .section_right {
         display: flex;
         flex-direction: column;
         justify-content: space-around; }
-      .container main .three_d .pump_status {
+      .container main .threed_box_hook .pump_status {
         width: 214px;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 8px;
@@ -336,14 +353,14 @@ ul {
         padding: 0 0 8px 25px;
         box-sizing: border-box;
         margin-left: 20px; }
-        .container main .three_d .pump_status .title {
+        .container main .threed_box_hook .pump_status .title {
           font-size: 18px;
           text-align: center;
           margin: 12px 0 20px; }
-        .container main .three_d .pump_status .text {
+        .container main .threed_box_hook .pump_status .text {
           font-size: 12px;
           margin-bottom: 10px; }
-      .container main .three_d .consumption_status {
+      .container main .threed_box_hook .consumption_status {
         width: 214px;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 8px;
@@ -351,11 +368,11 @@ ul {
         padding: 0 0 8px 25px;
         box-sizing: border-box;
         margin-left: 20px; }
-        .container main .three_d .consumption_status .title {
+        .container main .threed_box_hook .consumption_status .title {
           font-size: 18px;
           text-align: center;
           margin: 12px 0 20px; }
-        .container main .three_d .consumption_status .text {
+        .container main .threed_box_hook .consumption_status .text {
           font-size: 12px;
           margin-bottom: 10px; }
 

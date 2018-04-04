@@ -141,32 +141,49 @@
 					&.active
 						background: rgb(69, 161, 255)
 						color: rgb(255, 255, 255)
-			.info_wrapper
+			.map_info_hook
 				$color: ( fault: rgb(245, 64, 64), normal: rgb(71, 209, 71), mainten: rgb(255, 241, 84) )
 				display: flex
-			@each $key, $val in ( fault: rgb(245, 64, 64), normal: rgb(71, 209, 71), mainten: rgb(255, 241, 84) )
-				.#{$key}
-					color: $val
-					font-size: 20px
-					margin-right: 84px
-					vertical-align: top
-					&:last-child
-						margin: 0
-					&.#{$key}:before
-						display: inline-block
-						content: ''
-						width: 24px
-						height: 24px
-						background: $val
-						border-radius: 50%	
-						box-shadow: 0 0 10px 0 $val
-						margin-right: 18px
+				@each $key, $val in ( fault: rgb(245, 64, 64), normal: rgb(71, 209, 71), mainten: rgb(255, 241, 84) )
+					.#{$key}
+						color: $val
+						font-size: 20px
+						margin-right: 84px
 						vertical-align: top
-		.map
+						&:last-child
+							margin: 0
+						&.#{$key}:before
+							display: inline-block
+							content: ''
+							width: 24px
+							height: 24px
+							background: $val
+							border-radius: 50%	
+							box-shadow: 0 0 10px 0 $val
+							margin-right: 18px
+							vertical-align: top
+			.threed_info_hook
+				display: none
+				.text
+					display: inline-block
+					width: 136px
+					height: 42px
+					color: rgb(255, 255, 255)
+					background: rgb(69, 161, 255)
+					font-size: 20px
+					text-align: center
+					line-height: 42px
+					margin-left: 25px
+					border-radius: 6px	
+					cursor: pointer		
+					&:hover
+						background: rgb(125, 189, 255)	
+		.map_box_hook
 			height: calc(100% - 88px - 85px)
 			background: url('../images/map_bg.png') no-repeat			
 			background-size: cover
-		.three_d
+			position: relative
+		.threed_box_hook
 			display: flex
 			justify-content: space-between
 			height: calc(100% - 88px - 85px)
