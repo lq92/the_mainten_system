@@ -185,8 +185,7 @@ ul {
       min-width: 780px;
       height: 85px;
       padding: 0 50px 0 32px;
-      box-sizing: border-box;
-      background: white; }
+      box-sizing: border-box; }
       .container main .information .toggle_btns {
         width: 216px;
         height: 42px;
@@ -226,7 +225,7 @@ ul {
             height: 24px;
             background: #f54040;
             border-radius: 50%;
-            box-shadow: 0 0 10px 0 #f54040;
+            box-shadow: 0 0 6px 0 #f54040;
             margin-right: 18px;
             vertical-align: top; }
         .container main .information .map_info_hook .normal {
@@ -243,7 +242,7 @@ ul {
             height: 24px;
             background: #47d147;
             border-radius: 50%;
-            box-shadow: 0 0 10px 0 #47d147;
+            box-shadow: 0 0 6px 0 #47d147;
             margin-right: 18px;
             vertical-align: top; }
         .container main .information .map_info_hook .mainten {
@@ -260,7 +259,7 @@ ul {
             height: 24px;
             background: #fff154;
             border-radius: 50%;
-            box-shadow: 0 0 10px 0 #fff154;
+            box-shadow: 0 0 6px 0 #fff154;
             margin-right: 18px;
             vertical-align: top; }
       .container main .information .threed_info_hook {
